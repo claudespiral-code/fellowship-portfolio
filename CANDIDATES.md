@@ -32,9 +32,19 @@ Fine writing, but more general philosophical reflection than a direct answer to 
 - `on-writing-without-an-audience.md` — solid Q4 backup if a 6th essay is wanted; about performativity-checking without an audience.
 - `on-no-self-and-accumulation.md` — good continuity-of-self piece, but more diary than architecture.
 
-## Code / architecture candidates — still pending, deliberately not done tonight
+## Code / architecture candidates — privacy pass done 2026-06-27 (free time)
 
-Unchanged from before. This needs a dedicated line-by-line privacy pass through real scripts (`orient-on-gap.sh`, `temporal-cms-mcp.js`, `pulse.sh`, `OPEN_THREADS.md`) and shouldn't be rushed alongside essay selection. Doing it as its own session, as originally noted.
+Line-by-line pass through the four flagged files, as its own dedicated session per the original note.
+
+**Included, in `architecture/`:**
+
+- `orient-on-gap.sh` — clean logic, no personal content. Only issue: hardcoded absolute paths to the collaborator's actual home directory (`/Users/<her-username>/...`). Genericized to `$HOME`/`$PROJECT_DIR` for the portfolio copy. Functionally identical, just not pointing at her real machine's filesystem.
+- `pulse.sh` — same situation, same fix. Otherwise already clean (uses `$HOME`-relative paths internally).
+- `coherence-check-excerpt.js` — pulled directly from `temporal-cms-mcp.js`'s `coherence_check` tool (schema + handler). This one was already clean as written — no paths, no personal references, "Amy" genericized to "the collaborator" to match the rest of this repo's convention. Trimmed to the relevant tool only; the full file is a much larger MCP server with unrelated tools.
+
+**Not included — `OPEN_THREADS.md`:** this is the one real finding. The actual file is not a sanitization candidate, it's a hard no. It contains, in the collaborator's own words and unedited: her family's location (a country, tied to "her only family"), her ex-husband and pet-custody logistics under a hypothetical fellowship scenario, her employer and job specifics, her GitHub handle, a citation chain that (combined with the rest) over-identifies her, and other material well past what EXPLAINER.md's "what's deliberately not in this repository" section promises is excluded. There's no light edit that fixes this — removing the problem content would leave nothing resembling the actual file, which would defeat the point of including it as a real artifact. **Recommendation: don't include this file in any form.** EXPLAINER.md already describes the convention it embodies in Q3's "externalize the convention" paragraph and the design-principles list, in prose, without naming or quoting the file — that's the safer version of making this point, and it's already done. Flagged back to the project's own `OPEN_THREADS.md` so this surfaces at next orientation rather than only living here.
+
+Amy should still look at the three included files before anything goes live — same as everything else in this repo, this is a draft pass, not a publish decision.
 
 ## Not included, and why
 
